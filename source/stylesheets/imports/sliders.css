@@ -350,7 +350,7 @@ html[xmlns] .slider-wrap {display: block;}
 	top: 0;
 	left: 0;
 	z-index: 5;
-	background: transparent url('images/grid.png') repeat;
+	background: transparent url('../images/grid.png') repeat;
 	-webkit-backface-visibility: hidden;
 }
 

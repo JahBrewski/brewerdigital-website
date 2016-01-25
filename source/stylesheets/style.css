@@ -2887,7 +2887,7 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 	top: 0;
 	left: 0;
 	z-index: 5;
-	background: transparent url('images/grid.png') repeat;
+	background: transparent url('../images/grid.png') repeat;
 	-webkit-backface-visibility: hidden;
 }
 
@@ -8293,7 +8293,7 @@ body:not(.device-touch) .social-icon {
 	top: 0;
 	left: 0;
 	text-align: center;
-	background: rgba(0,0,0,0.2) url('images/grid.png') repeat;
+	background: rgba(0,0,0,0.2) url('../images/grid.png') repeat;
 }
 
 .i-overlay a { background: transparent; }
