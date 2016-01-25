@@ -74,14 +74,14 @@ end
 
 # Configuration variables specific to each project
 #------------------------------------------------------------------------
-AWS_BUCKET                      = 'acme.alienfast.com'
-AWS_CLOUDFRONT_DISTRIBUTION_ID  = 'xxxxxx'
+AWS_BUCKET                      = 'brewerdigital.com'
+AWS_CLOUDFRONT_DISTRIBUTION_ID  = 'E14ZSQLVEYF4F5'
 
 # Variables: Sent in on CLI by rake task via ENV
 #------------------------------------------------------------------------
-aws_secrets = YAML.load_file('.aws/brewerdigital.yml')
+aws_secrets = YAML.load_file('/Users/joelbrewer/.aws/brewerdigital-website.yml')
 AWS_ACCESS_KEY                  = aws_secrets["access_key_id"]
-AWS_SECRET                      = aws_secrets["aws_secret"]
+AWS_SECRET                      = aws_secrets["secret_access_key"]
 
 # https://github.com/fredjean/middleman-s3_sync
 activate :s3_sync do |s3_sync|
