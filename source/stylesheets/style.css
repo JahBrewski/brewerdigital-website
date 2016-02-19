@@ -13231,3 +13231,7 @@ body:not(.no-transition) #wrapper,
 	padding:0!important
 }
 
+.non-home-nav li a{
+  color: black !important;
+}
+

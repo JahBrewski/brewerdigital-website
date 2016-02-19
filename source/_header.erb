@@ -1,4 +1,8 @@
-<header id="header" class="full-header transparent-header border-full-header dark static-sticky" data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="100">
+<% if home_page == "true" %>
+  <header id="header" class="full-header transparent-header border-full-header dark static-sticky" data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="100">
+<% else %>
+  <header id="header" class="dark sticky-header">
+  <% end %>
 
   <div id="header-wrap">
 
@@ -16,12 +20,21 @@
       ============================================= -->
       <nav id="primary-menu">
 
-        <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
-          <li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
-          <!--<li><a href="#" data-href="#section-work"><div>Work</div></a></li>-->
-          <li><a href="#" data-href="#section-services"><div>Services</div></a></li>
-          <li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
-        </ul>
+        <% if home_page == "true" %>
+          <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+            <li><a href="#wrapper" data-href="#wrapper"><div>Home</div></a></li>
+            <!--<li><a href="#" data-href="#section-work"><div>Work</div></a></li>-->
+            <li><a href="#section-services" data-href="#section-services"><div>Services</div></a></li>
+            <li><a href="#section-contact" data-href="#section-contact"><div>Contact</div></a></li>
+          </ul>
+        <% else %>
+          <ul class="one-page-menu">
+            <li><a href="/index.html#wrapper"><div>Home</div></a></li>
+            <!--<li><a href="#" data-href="#section-work"><div>Work</div></a></li>-->
+            <li><a href="/index.html#section-services"><div>Services</div></a></li>
+            <li><a href="/index.html#section-contact"><div>Contact</div></a></li>
+          </ul>
+        <% end %>
 
       </nav><!-- #primary-menu end -->
 
