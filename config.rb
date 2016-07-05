@@ -24,6 +24,10 @@
 #   page "/admin/*"
 # end
 
+#with_layout :case_study do
+#  page "/work/*"
+#end
+
 # Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
@@ -35,10 +39,14 @@
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
+# Make URLs nice and pretty
+# ie: brewerdigital.com/about instead of brewerdigital.com/about.html
+activate :directory_indexes
+
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 

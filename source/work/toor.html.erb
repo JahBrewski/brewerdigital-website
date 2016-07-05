@@ -1,0 +1,65 @@
+<%= partial(:header, :locals => { :home_page => "false" }) %>
+<div class="container clearfix content-wrap case-study">
+
+  <div class="subtitle center">
+    <h1 class="t300">A smarter and safer way to access and tour properties</h2>
+  </div>
+
+  <hr>
+
+  <div class="tags">iPhone App Development | Ruby on Rails Development | Hardware/Software Integration
+  </div>
+
+  <!--<iframe src="https://player.vimeo.com/video/166836862" width="640" height="360" frameborder="0"></iframe>-->
+  <video width="100%" height="360" controls>
+    <source src="../../videos/case-studies/toor/app_hd.mp4">
+  </video>
+
+  <!--
+  <div class="main-image">
+    <img src="../images/case-studies/toor/app_and_device.jpg" alt="TOOR device and mobile app">
+  </div>
+  -->
+
+  <div class="intro topmargin-sm">
+    <p>
+    <a target="_blank" href="http://toor.today/">TOOR today</a>, brainchild of Dallas real estate mogul Junior Desinor, is a scheduling tool and lockbox system integrated to seamlessly connect home buyers, sellers, and agents. The system’s keystone is the TOOR lockbox, a next-generation lockbox with built-in Bluetooth and cellular technology. Using the TOOR app’s live map of nearby agents, showings can be scheduled in seconds. Once approved, use your phone to unlock the lockbox at your scheduled time. Home buying and selling hassles? Solved.
+    </p>
+  </div>
+
+
+  <div class="challenges">
+    <p>
+    When TOOR today first contacted us, they were lacking a technology partner capable of taking their initial concepts from ideas to market-viable realities. They wanted an app capable of scheduling property tours and wirelessly unlocking and locking their lockbox. They also wanted their app to show nearby realtors in real-time, so users looking to tour a property could quickly schedule a showing. The app also needed robust property search functionality, integrating both user-added properties and MLS listings.
+    </p>
+  </div>
+  
+  <div class="how-we-helped">
+    <p>
+    Our first step towards building a solution for TOOR today was to dig deep and truly understand their business needs, in all their nitty gritty glory. Once we were comfortable in our understanding of the business, we started to develop the underlying architecture of their system. This included fleshing out the API and designing the database that would serve as the system’s central hub. Once our back-end started to take shape, we started work on the front-end. We chose the <a target="_blank" href="http://ionicframework.com/">Ionic</a> platform because it supports rapid development for both iOS and Android and because of its ability to <a target="_blank" href="https://github.com/don/cordova-plugin-ble-central">easily integrate with embedded hardware</a>. In order to ensure continuity with the TOOR hardware, <a target="_blank" href="http://i.imgur.com/JStuZMV.jpg">we created a TOOR prototype</a> using an Arduino and <a target="_blank" href="https://www.adafruit.com/products/1697?gclid=CPWcmJuz3c0CFZA2aQodYUcI_g">Bluetooth Low Energy (BLE 4.0) Breakout</a>.
+    </p>
+  </div>
+
+  <div class="quote">
+    <p><em><strong>
+    Brewer Digital was by far one of my most trusted and reliable partners in this project. We have gone from a basic idea to preparing for a full market launch. These guys absolutely know what they are doing.
+    </strong></em>
+    </p>
+    <p class="client">
+    Junior Desinor | CEO Toor Today
+    </p>
+  </div>
+
+
+  <hr>
+  <div class="results">
+    <h2 class="t300">Results</h2>
+    <ul>
+      <li><a target="_blank" href="https://www.kickstarter.com/projects/toor/toor-the-worlds-smartest-lockbox">Launched and completed a successful Kickstarter campaign</a></li>
+      <li>Gained the interest of Realogy, <a target="_blank" href="https://www.realogy.com/media/pr/show_release.cfm?id=1904">a Fortune 500 company</a></li>
+      <li><a target="_blank" href="http://realogyfwd.com/participants/">Featured at the Realogy FWD innovation summit</a></li>
+      <li>Featured in <a target="_blank" href="http://launchdfw.com/2016/04/07/unlock-real-estate-magic-toor-today/">LaunchDFW</a></li>
+    </ul>
+  </div>
+</div>
+<%= partial(:footer, :locals => { :home_page => "true" }) %>
