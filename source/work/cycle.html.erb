@@ -1,0 +1,65 @@
+<%= partial(:header, :locals => { :home_page => "false" }) %>
+<div class="container clearfix content-wrap case-study">
+
+  <div class="subtitle center">
+    <h1 class="t300">Great parking to your credit</h1>
+  </div>
+
+  <hr>
+
+  <div class="tags">Hardware/Software Integration | iPhone App Development | Ruby on Rails Development
+  </div>
+
+  <!--<iframe src="https://player.vimeo.com/video/166836862" width="640" height="360" frameborder="0"></iframe>-->
+  <!--
+  <video width="100%" height="360" controls>
+    <source src="../../videos/case-studies/toor/app_hd.mp4">
+  </video>
+  -->
+
+  <div class="main-image">
+    <img src="../images/case-studies/cycle/cycle_iphone_on_table.png" alt="Cycle mobile app">
+  </div>
+
+  <div class="intro topmargin-sm">
+    <p>
+    <a href="http://www.cyclelots.com" target="_blank">Cycle</a> is making "where should I park?" a relic of the past. Using a proprietary trading algorithm and intelligent curbside device, they created a seamless parking system that rewards outgoing users for trading their parking spot with incoming users, increasing parking lot efficiency through a self-regulating feedback loop. Science + the internet = never again making thirty loops to park downtown.
+    </p>
+  </div>
+
+
+  <div class="challenges">
+    <p>
+    One of the greatest challenges for this project was the trading algorithm. The algorithm includes business logic for the many states of the system and operates in real-time. It consumes data from a variety of sources, including iOS user activity and curbside device data, and uses those data to programmatically assign parking spots to incoming users. To ensure this complex system operates appropriately and bug-free across all use-cases, we followed <a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank">TDD</a> practices and developed a robust test suite capable of fully exercising the system.
+    </p>
+    <p>
+    Another major challenge was testing and integrating the smart curbside devices. Using BLE and WiFi we developed a client/server architecture for managing the curbside devices and appropriately updating our database when vehicles are parked in Cycle spots. Our curbside devices are capable of recognizing when a vehicle is parked in a Cycle spot, as well as recognizing whether or not the user is also a Cycle user. This data is transmitted back to the Cycle server in real-time and is used to update the state of the system.
+    </p>
+  </div>
+  
+  <div class="how-we-helped">
+    <p>
+    We worked with Cycle to develop their system from the ground up. Our first task was a robust knowledge gathering phase, culminating in a set of initial requirements. We knew Cycle needed to iterate quickly and wanted to integrate valuable user feedback, so we worked through their project in a series of phases, allowing us to focus on the most pressing business needs at all times. We crafted a backend architecture using a combination of Rails API (REST API), Postgres (Database/persistence), and Redis (Real-time scheduling, task runner). We developed our frontend in the <a href="http://ionicframework.com/" target="_blank">Ionic framework</a>, a high-performant, cross-platform, mobile development framework, and ideal choice for real-time, data-centric applications like Cycle. We leveraged several external services, including Stripe for credit card transactions and the Google Directions API for real-time traffic estimates.
+    </p>
+  </div>
+
+  <div class="quote">
+    <p><em><strong>
+    You delivered excellent web development work, which was my expectation. What exceeded my expectation was the consultative input that helped to form some of the core functions of the platform. Maybe it’s that they listened and offered solutions at the right time. I wasn't charged for that, and looking back, I can't put a price on the difference that input made.
+    </strong></em>
+    </p>
+    <p class="client">
+    Landon Bell | CEO Cycle
+    </p>
+  </div>
+
+
+  <hr>
+  <div class="results">
+    <h2 class="t300">Results</h2>
+    <ul>
+      <li>Launched an alpha, received user feedback, and iterated with new, improved features</li>
+    </ul>
+  </div>
+</div>
+<%= partial(:footer, :locals => { :home_page => "true" }) %>
