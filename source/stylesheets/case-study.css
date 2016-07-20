@@ -1,0 +1,23 @@
+.case-study {
+  width: 650px;
+}
+
+.case-study .tags {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.case-study p {
+  line-height: 28px;
+  font-size: 15px;
+}
+
+.case-study .quote p {
+  margin-bottom: 0px
+}
+
+.case-study .quote .client {
+  margin-top: 10px;
+}
