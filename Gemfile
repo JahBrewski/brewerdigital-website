@@ -6,6 +6,9 @@ gem "middleman", "~>3.4.0"
 gem "middleman-aws"
 gem "middleman-s3_sync"
 gem "middleman-cloudfront"
+gem "middleman-minify-html"
+gem "therubyracer"
+gem "oj"
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"

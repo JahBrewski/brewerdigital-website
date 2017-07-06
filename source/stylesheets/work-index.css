@@ -37,3 +37,7 @@
   opacity: 1;
 	cursor: pointer;
 }
+
+.read-more {
+  margin-bottom: 30px !important;
+}

@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "Building..."
-middleman build
+bundle exec middleman build
 echo "Syncing with s3..."
-middleman s3_sync
+bundle exec middleman s3_sync
 echo "Invalidating Cloudfront..."
-middleman invalidate
+bundle exec middleman invalidate
 echo "Done!"

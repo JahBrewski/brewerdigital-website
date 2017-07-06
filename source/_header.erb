@@ -1,29 +1,18 @@
-<% if home_page == "true" %>
-  <header id="header" class="full-header transparent-header border-full-header dark static-sticky" data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="100">
-<% else %>
-  <header id="header" class="dark sticky-header">
-  <% end %>
-
+<header id="header" class="full-header dark sticky-header">
   <div id="header-wrap">
-
     <div class="container clearfix">
-
       <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-
-      <!-- Logo
-      ============================================= -->
       <% if home_page == "false" %>
         <a href="/">
           <div id="logo" style="padding-top: 15px !important;">
-            BD
+            Brewer Digital
           </div><!-- #logo end -->
         </a>
       <% else %>
         <div id="logo" style="padding-top: 15px !important;">
-          BD
+          Brewer Digital
         </div><!-- #logo end -->
       <% end %>
-
       <!-- Primary Navigation
       ============================================= -->
       <nav id="primary-menu">
@@ -43,11 +32,7 @@
             <li><a href="/index.html#section-contact"><div>Contact</div></a></li>
           </ul>
         <% end %>
-
       </nav><!-- #primary-menu end -->
-
     </div>
-
   </div>
-
 </header><!-- #header end -->
