@@ -117,7 +117,7 @@ span.middot {
 
 .noradius { -webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; -ms-border-radius: 0 !important; -o-border-radius: 0 !important; border-radius: 0 !important; }
 
-.col-padding { padding: 60px; }
+.col-padding { padding: 40px; }
 
 .nopadding { padding: 0 !important; }
 

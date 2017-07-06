@@ -87,6 +87,7 @@ body.stretched #header.full-header .container {
 	font-size: 36px;
 	line-height: 100%;
 	margin-right: 40px;
+  color: #ff9100 !important;
 }
 
 #header.full-header #logo {
@@ -99,7 +100,7 @@ body.stretched #header.full-header .container {
 
 #logo a {
 	display: block;
-	color: #000;
+  color: #ff9100;
 }
 
 #logo img {
