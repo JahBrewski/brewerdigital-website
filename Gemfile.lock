@@ -163,7 +163,7 @@ GEM
     i18n (0.7.0)
     inflecto (0.0.2)
     ipaddress (0.8.2)
-    json (1.8.3)
+    json (1.8.6)
     kramdown (1.9.0)
     libv8 (3.16.14.19)
     listen (3.0.5)
@@ -300,4 +300,4 @@ DEPENDENCIES
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.14.6
+   1.16.1
