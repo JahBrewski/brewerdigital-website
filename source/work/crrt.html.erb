@@ -1,0 +1,59 @@
+<%= partial(:header, :locals => { :home_page => "false" }) %>
+<div class="container clearfix content-wrap case-study">
+
+  <div class="subtitle center">
+    <h1 class="t300">Patient simulation for kidney doctors</h1>
+  </div>
+
+  <hr>
+
+  <div class="tags">Algorithm Development | JavaScript Development | Web App
+  </div>
+
+  <!--<iframe src="https://player.vimeo.com/video/166836862" width="640" height="360" frameborder="0"></iframe>-->
+  <!--
+  <video width="100%" height="360" controls>
+    <source src="../../videos/case-studies/toor/app_hd.mp4">
+  </video>
+  -->
+
+  <div class="main-image">
+    <img src="/images/case-studies/crrt/orders.png" alt="CRRT patient simulator">
+  </div>
+
+  <div class="intro topmargin-sm">
+    <p>Dr. Ben Griffin came to Brewer Digital with an idea for an innovative teaching tool: to create an in-app patient simulator for Continuous Renal Replacement Therapy (CRRT), in which user’s input directly affect the patient’s clinical course in clinically accurate fashion. Users would receive real-time feedback on their decisions, with supporting written materials to provide and reinforce background information and the learner would be exposed to common pathophysiologies in critically ill patients, as well as clinical management of critically ill patients in need of renal support therapy.</p>
+  </div>
+
+  <div class="challenges">
+    <p>While Dr. Griffin knew he wanted a software application built, he was unsure whether a native, hybrid, or web application was the correct choice. We decided to build a web application because: 1) it was the fastest of the three to develop, 2) there was no need to go native for an application based mostly on forms and data, 3) there was no need to build a hybrid app because we didn’t need to interact directly with the phone, and didn’t require the app to be on the app stores.</p>
+    <p></p>
+  </div>
+  
+  <div class="how-we-helped">
+    <p>Once we established and documented the required functionality, we set to work modeling the system’s architecture. To keep things simple, we chose to build the front-end using JavaScript and jQuery and utilized the Google Sheets API for our back-end. The choice to use Google Sheets, versus a more standard relational database, was to enable Dr. Griffin to update data as quickly and easily as possible. This setup allowed instant propagation of any spreadsheet changes.</p>
+    <p>Upon culmination of the project, our application won the Innovations in Kidney Education Contest, hosted by the American Society of Nephrology. Not to brag (OK, kind of to brag), but we had some pretty stiff competition: we beat Harvard. </p>
+  </div>
+
+  <!--
+  <div class="quote">
+    <p><em><strong>
+        Brewer Digital was transparent in their capabilities and bid accurately. Communication was good and I didn't feel nickel and dimed!
+    </strong></em>
+    </p>
+    <p class="client">
+    Diane Snead | Founder and CEO RipTide
+    </p>
+  </div>
+  -->
+
+
+  <hr>
+  <div class="results">
+    <h2 class="t300">Results</h2>
+    <ul>
+      <li>Winner - Innovations in Kidney Education Contest, American Society of Nephrology</li>
+    </ul>
+  </div>
+</div>
+<%= partial(:footer, :locals => { :home_page => "true" }) %>
